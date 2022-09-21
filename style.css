@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Spot-darker: #000000;
+    --Spot-dark: #080B12;
+    --Spot-primary: #141922;
+    --Spot-play: #282828;
+    --Spot-text: #585858;
+    --Spot-decoration: #ADFF2F;
+    --Spot-lighter: #FFFFFF;
+}
+.row{
+    display: flex;
+}
+.col_2{
+    width: calc((100% / 12)*2);
+}
+.col_10{
+    width: calc((100% / 12)*10);
+}
+
+/* #region debug */
+.debug .col_2{
+    background-color: red;
+    height: 100vh;
+}
+.debug .col_10{
+    background-color: aqua;
+    height: 100vh;
+}
+.debug .upgrade{
+    background-color: yellow;
+}
+/* #endregion debug */
+
+/* #region upgrade */
+    .upgrade{
+        height: 100px;
+        position: fixed;
+        width: 100%;
+    }
+/* #endregion upgrade */
+
+
