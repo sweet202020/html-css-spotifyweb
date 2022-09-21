@@ -14,19 +14,26 @@
 }
 
 .row_principal{
-    height: 100vh;
+    height: calc(100vh - 100px);
     display: flex;
 }
-
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
 .row{
     display: flex;
-}
-
+    flex-wrap: wrap;
+    row-gap: 3rem;  
+} 
 .col_2{
     width: calc((100% / 12)*2);
 }
 .col_10{
     width: calc((100% / 12)*10);
+}
+.col_12{
+    width: 100%;
 }
 
 /* #region debug */
@@ -38,8 +45,12 @@
     background-color: aqua;
     
 }
+.debug .col_12{
+    height: 100px;
+}
 .debug .upgrade{
     background-color: yellow;
+    height: 100px;
 }
 .debug .recently_played .col_2, .debug .create_for .col_2, .debug .popular .col_2{
     background-color: green;
@@ -48,15 +59,47 @@
 .debug .col_10 .col_2{
     height: 100px;
 }
+.debug .player{
+    background-color: blue;
+}
 /* #endregion debug */
 
 /* #region upgrade */
 .upgrade{
-    height: 100px;
-    position: fixed;
-    width: 100%;
+    display: flex;
 }
 /* #endregion upgrade */
-.recently_played{
-    margin-top: 10rem;
+
+/* #region recently_played */
+
+/* #endregion recently_played */
+
+
+.index{
+    z-index: 100;
+}
+
+/* #region player */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width:878px) {
+    .container{
+        max-width: 840px;
+    }
+    .col_tab{
+        width: calc((100% / 12)*3);
+    }
 }
