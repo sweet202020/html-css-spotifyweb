@@ -12,9 +12,16 @@
     --Spot-decoration: #ADFF2F;
     --Spot-lighter: #FFFFFF;
 }
+
+.row_principal{
+    height: 100vh;
+    display: flex;
+}
+
 .row{
     display: flex;
 }
+
 .col_2{
     width: calc((100% / 12)*2);
 }
@@ -25,23 +32,31 @@
 /* #region debug */
 .debug .col_2{
     background-color: red;
-    height: 100vh;
+    
 }
 .debug .col_10{
     background-color: aqua;
-    height: 100vh;
+    
 }
 .debug .upgrade{
     background-color: yellow;
 }
+.debug .recently_played .col_2, .debug .create_for .col_2, .debug .popular .col_2{
+    background-color: green;
+    border: 1px solid;
+}
+.debug .col_10 .col_2{
+    height: 100px;
+}
 /* #endregion debug */
 
 /* #region upgrade */
-    .upgrade{
-        height: 100px;
-        position: fixed;
-        width: 100%;
-    }
+.upgrade{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
 /* #endregion upgrade */
-
-
+.recently_played{
+    margin-top: 10rem;
+}
