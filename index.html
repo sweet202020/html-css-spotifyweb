@@ -4,42 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify-web</title>
 </head>
-<body class="debug">
+<body>
     
     <main id="site_main">
         <div class="row_principal">
-            <div class="col_2"></div>
+            <div class="sidebar col_2 col_tab col_tab_sm col_mobile">
+                <div class="column">
+                    <nav>
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="">
+                    </div>
+                        <div class="d_flex">
+                            <img src="./img/home.svg" alt="">
+                            <div>Home</div> 
+                        </div>
+                        <div class="d_flex">
+                            <img src="./img/search.svg" alt=""> 
+                            <div>Cerca</div> 
+                        </div>
+                        <div class="d_flex">
+                            <img src="./img/libreria.svg" alt="">
+                            <div>Libreria</div> 
+                        </div>
+                    </nav>
+                    <div class="playlist">
+                        <h2>PLAYLIST</h2>
+                        <div class="d_flex">
+                            <i class="fa-solid fa-plus"></i>
+                            <h3>Crea Playlist</h3>
+                        </div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                        <div>Nome Playlist</div>
+                    </div>
+                    <div class="profile">
+                        <h5><i class="fa-solid fa-arrow-up"></i>Installa app</h5>
+                        <hr>
+                        <div class="d_flex">
+                            <div>
+                                <img src="./img/profile.svg" alt="">
+                            </div>
+                            <div>
+                                John Doe
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- /.col_2 -->
-            <div class="col_10">
+            <div class="col_10 col_mobile_lg">
                 <div class="container">
                     <section class="upgrade">
                         
                     </section>
                     <section class="recently_played">
                         <div class="row">
-                            <div class="col_2 col_tab"></div>
-                            <div class="col_2 col_tab"></div>
-                            <div class="col_2 col_tab"></div>
-                            <div class="col_2 col_tab"></div>
-                            <div class="col_2 col_tab"></div>
-                            <div class="col_2 col_tab"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
                         </div>
                     </section>
                     <!-- /.recently_played -->
                     <section class="create_for">
                         <div class="row">
-                            <div class="col_2"></div>
-                            <div class="col_2"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
                         </div>
                     </section>
                     <!-- /.create_for -->
                     <section class="popular">
                         <div class="row">
-                            <div class="col_2"></div>
-                            <div class="col_2"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
+                            <div class="col_2 col_tab col_tab_sm"></div>
                         </div>
                     </section>
                     <!-- /.popular -->
@@ -51,7 +99,7 @@
         </div>
         <!-- /.row -->
         <section class="player">
-            <div class="row index">
+            <div class="row">
                 <div class="col_12">
     
                 </div>
