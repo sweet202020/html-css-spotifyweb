@@ -12,100 +12,163 @@
 <body>
     
     <main id="site_main">
-        <div class="row_principal">
-            <div class="sidebar col_2 col_tab col_tab_sm col_mobile">
-                <div class="column">
-                    <nav>
-                    <div class="logo">
-                        <img src="./img/logo.svg" alt="">
-                    </div>
-                        <div class="d_flex">
-                            <img src="./img/home.svg" alt="">
-                            <div>Home</div> 
-                        </div>
-                        <div class="d_flex">
-                            <img src="./img/search.svg" alt=""> 
-                            <div>Cerca</div> 
-                        </div>
-                        <div class="d_flex">
-                            <img src="./img/libreria.svg" alt="">
-                            <div>Libreria</div> 
-                        </div>
-                    </nav>
-                    <div class="playlist">
-                        <h2>PLAYLIST</h2>
-                        <div class="d_flex">
-                            <i class="fa-solid fa-plus"></i>
-                            <h3>Crea Playlist</h3>
-                        </div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                    </div>
-                    <div class="profile">
-                        <h5><i class="fa-solid fa-arrow-up"></i>Installa app</h5>
-                        <hr>
-                        <div class="d_flex">
-                            <div>
-                                <img src="./img/profile.svg" alt="">
+        <div class="wrapper">
+            <div class="row_principal">
+                <div class="sidebar col_2 col_tab col_tab_sm col_mobile">
+                    <div class="column">
+                        <nav>
+                            <div class="mobile">
+                                <img src="./img/logo-small.svg" alt="">
                             </div>
-                            <div>
-                                John Doe
+                            <div class="logo_container">
+                                <img id="logo" src="./img/logo.svg" alt="">
                             </div>
+                            <div class="d_flex">
+                                <img src="./img/home.svg" alt="">
+                                <div>Home</div> 
+                            </div>
+                            <div class="d_flex">
+                                <img src="./img/search.svg" alt=""> 
+                                <div>Cerca</div> 
+                            </div>
+                            <div class="d_flex">
+                                <img src="./img/libreria.svg" alt="">
+                                <div>Libreria</div> 
+                            </div>
+                        </nav>
+                        <div class="playlist">
+                            <h2>PLAYLIST</h2>
+                            <div class="d_flex">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Crea Playlist</h3>
+                            </div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                        </div>
+                        <div class="profile">
+                            <h5><i class="fa-solid fa-arrow-down"></i>Installa app</h5>
+                            <hr>
+                            <div class="d_flex">
+                                <div>
+                                    <img src="./img/profile.svg" alt="">
+                                </div>
+                                <div>
+                                    John Doe
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile_mobile">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <img src="./img/profile.svg" alt="">
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- /.col_2 -->
-            <div class="col_10 col_mobile_lg">
-                <div class="container">
+                <!-- /.col_2 -->
+                <div class="col_10 col_mobile_lg">
                     <section class="upgrade">
-                        
-                    </section>
-                    <section class="recently_played">
-                        <div class="row">
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                            <div class="col_2 col_tab col_tab_sm"></div>
+                        <div class="button">
+                            <a href="#">EFFETTUA L'UPGRADE</a>
                         </div>
                     </section>
-                    <!-- /.recently_played -->
-                    <section class="create_for">
-                        <div class="row">
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                        </div>
-                    </section>
-                    <!-- /.create_for -->
-                    <section class="popular">
-                        <div class="row">
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                            <div class="col_2 col_tab col_tab_sm"></div>
-                        </div>
-                    </section>
-                    <!-- /.popular -->
-
-                </div>
-                <!-- ./container -->
-            </div>
-            <!-- /.col_10 -->
-        </div>
-        <!-- /.row -->
-        <section class="player">
-            <div class="row">
-                <div class="col_12">
+                    <div class="container">
+                        <nav>
+                            <ul>
+                                <li><a href="">IN EVIDENZA</a></li>
+                                <li><a href="">PODCAST</a></li>
+                                <li><a href="">CLASSIFICHE</a></li>
+                                <li><a href="">GENERI E MOOD</a></li>
+                                <li><a href="">NUOVE USICTE</a></li>
+                                <li><a href="">SCOPRI</a></li>
+                            </ul>
+                        </nav>
+                        <section class="recently_played">
+                            <h2>Recently Played</h2>
+                            <div class="row">
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                    <h3>Heavy Metal</h3>
+                                    <h4>Subtitle</h4>
+                                </div>
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/stranger.jpeg" alt="">
+                                    <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                    <h4>Kyle Dixon & Michael Stein</h4>
+                                </div>
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                    <h3>A quiet place</h3>
+                                    <h4>Subtitle</h4>
+                                </div>
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/split.jpeg" alt="">
+                                    <h3>Split</h3>
+                                    <h4>Subtitle</h4>
+                                </div>
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/cure.jpeg" alt="">
+                                    <h3>A cure for welness</h3>
+                                    <h4>Subtitle</h4>
+                                </div>
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/sinister.jpeg" alt="">
+                                    <h3>Sinister</h3>
+                                    <h4>Subtitle</h4>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- /.recently_played -->
+                        <section class="create_for">
+                            <h2>Creato per John Doe</h2>
+                            <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
+                            <div class="row">
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/radar.jpeg" alt="">
+                                    <h3>Release Radar</h3>
+                                </div>
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                    <h3>Daily Mix 1</h3>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- /.create_for -->
+                        <section class="popular">
+                            <h2>Artisti più popolari</h2>
+                            <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
+                            <div class="row">
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/youg.jpeg" alt="">
+                                    <h3>Lana del Rey</h3>
+                                </div>
+                                <div class="col_2 col_tab col_tab_sm">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h3>Ludovico Einaudi</h3>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- /.popular -->
     
+                    </div>
+                    <!-- ./container -->
                 </div>
+                <!-- /.col_10 -->
             </div>
-        </section>
-        <!-- /.player -->
+            <!-- /.row_principal-->
+            <section class="player">
+                <div class="row">
+                    <div class="col_12">
+        
+                    </div>
+                </div>
+            </section>
+            <!-- /.player -->
+        </div>
+        <!-- /.wrapper -->
     </main>
     <!-- /#site_main -->
     
