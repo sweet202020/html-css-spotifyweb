@@ -270,6 +270,80 @@ body{
 }
 /* #endregion popular*/
 /* #region player */
+.player{
+    background-color: var(--Spot-play);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.song{
+    width: calc((100% / 12)*4);
+    display: flex;
+}
+.song div{
+    align-self: center;
+}
+.song img{
+    padding: 1rem;
+}
+.song h3{
+    color: white;
+}
+.song h4, .song div i{
+    color: var(--Spot-text);
+}
+.song div i{
+    padding: 0 10px;
+}
+.song div{
+    font-size: 20px;
+    padding: 0 20px;
+}
+.play{
+    width: calc((100% / 12)*5);
+    text-align: center;
+    margin: auto;
+}
+.play i{
+    color: white;
+    font-size: 20px;
+    margin: 0.5rem 2rem ;
+}
+.play .fa-play{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.play .time{
+    display: flex;
+    color: white;
+}
+.play .time div:not(.bars){
+    padding: 0 10px;
+}
+.play .bars{
+    margin-top: 10px;
+    height: 3px;
+    background-color: var(--Spot-text);
+    width: 485px;
+}
+.volume{
+    width: calc((100% / 12)*3);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.volume i{
+    color: white;
+    padding: 0 1rem;
+}
+.volume div{
+    height: 3px;
+    width: 100px;
+    background-color: var(--Spot-text);
+}
+/* #endregion player */
+
 
 
 
