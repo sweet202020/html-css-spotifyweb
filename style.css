@@ -83,18 +83,25 @@ body{
 }
 .sidebar nav{
     padding-bottom: 30px;
+    color: var(--Spot-text);
 }
 .sidebar nav .mobile{
     display: none;
 }
 .column{
-   max-width: 216px;
-   margin: auto;
+   padding: 0 10px;
 }
 .sidebar nav img{
     width: 30px;
     padding-bottom: 15px;
     filter: invert(0.5);
+    margin-left: 10px;
+}
+.mark{
+    height: 30px;
+    width: 3px;
+    background-color: var(--Spot-decoration);
+    margin-bottom: 12px;
 }
 #logo{
     filter: invert(0);
@@ -203,9 +210,17 @@ body{
         display: inline-block;
         padding-right: 1.5rem;
     }
+    .container nav .mark{
+        width: 40%;
+        margin: auto;
+        height: 3px;
+        margin-top: 5px;
+        margin-bottom: 2rem;
+    }
 /* #endregion nav */
 
 /* #region recently_played */
+
 .recently_played h2{
     color: white;
     margin: 2rem 0;
@@ -326,7 +341,9 @@ body{
     color: white;
     width: 450px;
 }
-
+.play .time div:not(.bars){
+    padding: 0 10px;
+}
 .play .bars{
     margin-top: 10px;
     height: 3px;
@@ -370,15 +387,10 @@ body{
         margin: auto;
         max-width: 660px;
     }
-    .column{
-        max-width: 180px;
-        margin: auto;
-    }
     .col_tab{
         width: calc((100% / 12)*3);
     }
     ul li a{
-        margin-bottom: 2rem;
         display: inline-block;
         font-size: 15px;
     }
@@ -393,10 +405,13 @@ body{
         padding: 0;
     }
     .song h4{
-        font-size: 12px;
+        font-size: 11px;
     }
     .play .time{
-        width: 276px;
+        width: 295px;
+    }
+    .play .time div:not(.bars) {
+        margin: 0 2px;
     }
 }
 @media screen and (max-width:639px){
@@ -404,15 +419,44 @@ body{
         margin: auto;
         max-width: 432px;
     }
-    .column{
-        max-width: 156px;
-        margin: auto;
-    }
     .recently_played .col_tab_sm{
         width: calc((100% / 12)*6);
     }
     .col_tab_sm{
         width: calc((100% / 12)*4);
+    }
+    .container_player{
+        max-width: 600px;
+        margin: auto;
+    }
+    .song h3{
+        font-size: 13px;
+    }
+    .song div{
+        padding: 0 8px;
+    }
+    .song div i {
+        padding: 0.2rem;
+    }
+    .play i{
+        font-size: 16px;
+    }
+    .play .time{
+        width: 206px;
+    }
+    .play .bars{
+        margin-top: 6px;
+    }
+    .play .time div:not(.bars) {
+        margin: 0 -5px;
+        font-size: 12px;
+    }
+    .volume i{
+        padding: 0 10px;
+        font-size: 13px;
+    }
+    .volume div{
+        width: 70px;
     }
 }
 @media screen and (max-width:552px){
@@ -420,12 +464,12 @@ body{
         margin: auto;
         max-width: 480px;
     }
-    .column{
-        max-width: 36px;
-        margin: auto;
-    }
     .col_mobile{
         width: calc(100% / 12);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
     }
     .col_mobile_lg{
         width: calc((100% / 12)*11);
@@ -438,20 +482,36 @@ body{
     }
     .sidebar nav img{
         filter: invert(0);
+        width: 25px;
     }
     .profile_mobile{
         display: block;
     }
     .profile_mobile i{
         margin-bottom: 20px;
-        margin-left: 10px;
+        margin-left: 5px;
         color: white;
+        font-size: 10px;
     }
-    .column{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
+    .container_player{
+        max-width: 528px;
+        margin: auto;
+    }
+    ul li a{
+        font-size: 14px;
+    
+    }
+    .play i{
+        font-size: 13px;
+    }
+    .song img{
+        padding: 35px 0;
+    }
+    .play .time{
+        width: 175px;
+    }
+    .volume div{
+        width: 65px;
     }
 }
 
