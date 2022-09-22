@@ -21,7 +21,7 @@
     display: flex;
 }
 .container{
-    max-width: 1416px;
+    max-width: 1140px;
     margin: 0 auto;
     height: calc(100% - 121px);
     overflow-y: auto;
@@ -272,9 +272,14 @@ body{
 /* #region player */
 .player{
     background-color: var(--Spot-play);
+}
+.container_player{
     height: 100px;
+    max-width: 1416px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+
 }
 .song{
     width: calc((100% / 12)*4);
@@ -291,6 +296,7 @@ body{
 }
 .song h4, .song div i{
     color: var(--Spot-text);
+    font-size: 15px;
 }
 .song div i{
     padding: 0 10px;
@@ -300,35 +306,35 @@ body{
     padding: 0 20px;
 }
 .play{
-    width: calc((100% / 12)*5);
+    width: calc((100% / 12)*4);
     text-align: center;
     margin: auto;
 }
 .play i{
     color: white;
     font-size: 20px;
-    margin: 0.5rem 2rem ;
+    margin: 0.5rem;
 }
 .play .fa-play{
     border: 3px solid white;
     border-radius: 50%;
-    padding: 5px;
+    padding: 8px;
+    padding-left: 10px;
 }
 .play .time{
     display: flex;
     color: white;
+    width: 450px;
 }
-.play .time div:not(.bars){
-    padding: 0 10px;
-}
+
 .play .bars{
     margin-top: 10px;
     height: 3px;
     background-color: var(--Spot-text);
-    width: 485px;
+    width: 100%;
 }
 .volume{
-    width: calc((100% / 12)*3);
+    width: calc((100% / 12)*4);
     display: flex;
     align-items: center;
     justify-content: end;
@@ -361,7 +367,8 @@ body{
 /* media query */
 @media screen and (max-width:878px) {
     .container{
-        max-width: 840px;
+        margin: auto;
+        max-width: 660px;
     }
     .column{
         max-width: 180px;
@@ -370,10 +377,32 @@ body{
     .col_tab{
         width: calc((100% / 12)*3);
     }
+    ul li a{
+        margin-bottom: 2rem;
+        display: inline-block;
+        font-size: 15px;
+    }
+    .container_player{
+        max-width: 840px;
+        margin: auto;
+    }
+    .song img{
+        padding: 25px 0;
+    }
+    .song div i{
+        padding: 0;
+    }
+    .song h4{
+        font-size: 12px;
+    }
+    .play .time{
+        width: 276px;
+    }
 }
 @media screen and (max-width:639px){
     .container{
-        max-width: 600px;
+        margin: auto;
+        max-width: 432px;
     }
     .column{
         max-width: 156px;
@@ -388,7 +417,8 @@ body{
 }
 @media screen and (max-width:552px){
     .container{
-        max-width: 528px;
+        margin: auto;
+        max-width: 480px;
     }
     .column{
         max-width: 36px;
