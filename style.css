@@ -519,9 +519,7 @@ ul li a{
     .play .time{
         width: 295px;
     }
-    .play .time div:not(.bars) {
-        margin: 0 2px;
-    }
+
 }
 @media screen and (max-width:639px){
     .container{
@@ -557,15 +555,12 @@ ul li a{
         margin-top: 6px;
     }
     .play .time div:not(.bars) {
-        margin: 0 -5px;
+        margin: 0 -2px;
         font-size: 12px;
     }
     .volume i{
         padding: 0 10px;
         font-size: 13px;
-    }
-    .volume div{
-        width: 70px;
     }
 }
 @media screen and (max-width:552px){
@@ -600,9 +595,9 @@ ul li a{
     }
     .sidebar .mobile{
         display: block;
+        padding-top: 5px;
     }
     .sidebar nav img{
-        filter: invert(0);
         width: 25px;
     }
     .profile_mobile{
@@ -631,9 +626,11 @@ ul li a{
     .play .time{
         width: 175px;
     }
-    .volume div{
-        width: 65px;
+    .play .fa-play:hover{
+        padding: 9px;
+        padding-left: 11px;
     }
+
 }
 
 
