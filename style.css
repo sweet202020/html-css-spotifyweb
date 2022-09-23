@@ -136,9 +136,12 @@ body{
     padding-left: 10px;
     color: var(--Spot-text);
 }
-.playlist div{
+.playlist ul li{
     color: var(--Spot-text);
-    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.playlist ul{
+    list-style: none;
 }
 /* #endregion playlist */
 
@@ -195,35 +198,35 @@ body{
     display: inline-block;
     text-decoration: none;
     color: white;
-    padding: 1.5rem 4.5rem;
+    padding: 1rem 3rem;
     border: 1px solid white;
     border-radius: 2rem;
     font-size: 20px;
 }
 /* #endregion upgrade */
 /* #region nav */
-    .col_10 nav{
-        margin-top: 3rem;
-    }
-    ul{
-        list-style: none;
-        text-align: center;
-    }
-    ul li a{
-        color: var(--Spot-text);
-        text-decoration: none;
-    }
-    ul li{
-        display: inline-block;
-        padding-right: 1.5rem;
-    }
-    .container nav .mark{
-        width: 40%;
-        margin: auto;
-        margin-top: 5px;
-        margin-bottom: 2rem;
-        padding: 2px 0;
-    }
+.col_10 nav{
+    margin-top: 3rem;
+}
+.col_10 nav ul{
+    list-style: none;
+    text-align: center;
+}
+ul li a{
+    color: var(--Spot-text);
+    text-decoration: none;
+}
+.col_10 nav ul li{
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+.container nav .mark{
+    width: 40%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    padding: 2px 0;
+}
 /* #endregion nav */
 
 /* #region recently_played */
@@ -235,6 +238,22 @@ body{
 }
 .recently_played img{
     border: 10px solid var(--Spot-primary);
+}
+.pos{
+    position: relative;
+}
+.recently_played i, .create_for i, .popular i{
+    border: 5px solid white;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 8px;
+    padding-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 .recently_played .col_2{
     text-align: center;
@@ -301,7 +320,7 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-
+    
 }
 .song{
     width: calc((100% / 12)*4);
@@ -348,23 +367,36 @@ body{
     color: white;
     width: 450px;
 }
-.play .time div:not(.bars){
+.play .time div:not(.bars, .circle){
     padding: 0 10px;
 }
-.play .bars, .play .bars .bars_op{
+.play .bars_op, .play .bars_op .bars_white{
     margin-top: 10px;
     height: 3px;
     background-color: var(--Spot-text);
 }
-.play .bars{
+.play .bars_op{
     width: 100%;
     position: relative;
 }
-.play .bars .bars_op{
+.play .bars_op .bars_white{
     background-color: white;
     width: 70%;
     position: absolute;
-    bottom: 0;
+    bottom: 0;  
+    left: 0;
+}
+.circle{
+    background-color: white;
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -3px;
+    display: none;
+    
 }
 .volume{
     width: calc((100% / 12)*4);
@@ -376,18 +408,79 @@ body{
     color: white;
     padding: 0 1rem;
 }
-.volume div{
+.vol_op{
     height: 3px;
     width: 100px;
     background-color: var(--Spot-text);
+    position: relative;
+}
+.vol_white{
+    height: 3px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
 }
 /* #endregion player */
 
 
 
+/* #region hover */
 
+.d_flex:hover img{
+    filter: invert(0);
+}
+.d_flex:hover{
+    color: white;
+}
+.playlist .d_flex:hover i{
+    background-color: white;
+    color: black;
+}
+.playlist .d_flex:hover h3{
+    color: white;
+}
+.playlist ul li:hover {
+    color: white;
+}
+.profile h5:hover{
+    color: white;
+}
+.profile h5:hover i{
+    border-color: white;
+}
+.upgrade .button:hover a{
+    padding: 1.2rem 3.2rem;
+}
+.container ul li:hover a{
+    color: white;
+}
+.song h4:hover{
+    text-decoration: underline;
+    color: white;
+}
+.song div i:hover{
+    color: white;
+}
+.play .fa-play:hover{
+    padding: 10px;
+    padding-left: 12px;
+}
+.play .time:hover .bars_white, .volume:hover .vol_white{
+    background-color: var(--Spot-decoration);
+}
+.play .time:hover .circle, .volume:hover .circle{
+    display: inline-block;
+}
+.recently_played img:hover + i, .create_for img:hover + i, .popular img:hover + i{
+    display: inline-block;
+}
 
+.recently_played img:hover, .popular img:hover, .create_for img:hover{
+    opacity: 0.5;
+}
 
+/* #endregion hover */
 
 
 
@@ -435,7 +528,7 @@ body{
         margin: auto;
         max-width: 432px;
     }
-    .recently_played .col_tab_sm{
+    .recently_played .col_tab_sm, .create_for .col_tab_sm, .popular .col_tab_sm{
         width: calc((100% / 12)*6);
     }
     .col_tab_sm{
