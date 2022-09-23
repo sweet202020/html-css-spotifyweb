@@ -35,7 +35,6 @@ img{
 }
 .col_2{
     width: calc((100% / 12)*2);
-    overflow: auto;
 }
 .col_10{
     width: calc((100% / 12)*10);
@@ -78,6 +77,7 @@ body{
 }
 .sidebar{
     background-color: var(--Spot-darker);
+    width: 220px;
 }
 .d_flex{
     display: flex;
@@ -95,6 +95,7 @@ body{
    padding: 0 10px;
    height: calc(100% - 400px);
    overflow-y: auto;
+   overflow-x: hidden;
 }
 .sidebar nav img{
     width: 30px;
@@ -184,7 +185,9 @@ body{
 }
 /* #endregion profile */
 /* #endregion sidebar */
-
+.mainbar{
+    width: calc(100% - 220px);
+}
 /* #region upgrade */
 .upgrade{
     background-color: var(--Spot-dark);
@@ -315,15 +318,13 @@ ul li a{
 }
 .container_player{
     height: 100px;
-    max-width: 1416px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    
 }
 .song{
     width: calc((100% / 12)*4);
     display: flex;
+    justify-content: flex-start;
 }
 .song div{
     align-self: center;
@@ -349,7 +350,12 @@ ul li a{
     width: calc((100% / 12)*4);
     text-align: center;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 .play i{
     color: white;
     font-size: 20px;
@@ -491,6 +497,12 @@ ul li a{
 
 /* media query */
 @media screen and (max-width:878px) {
+    .sidebar{
+        width: 200px;
+    }
+    .mainbar{
+        width: calc( 100% - 200px);
+    }
     .container{
         margin: auto;
         max-width: 660px;
@@ -521,6 +533,12 @@ ul li a{
 
 }
 @media screen and (max-width:639px){
+    .sidebar{
+        width: 200px;
+    }
+    .mainbar{
+        width: calc( 100% - 200px);
+    }
     .container{
         margin: auto;
         max-width: 432px;
@@ -563,6 +581,14 @@ ul li a{
     }
 }
 @media screen and (max-width:552px){
+    .sidebar{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainbar{
+        width: calc( 100% - 50px);
+    }
     .container{
         margin: auto;
         max-width: 480px;
@@ -579,13 +605,6 @@ ul li a{
     }
     nav .d_flex div, #logo, .playlist, .profile{
         display: none;
-    }
-    .bar{
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
     }
     .mobile img{
         width: 30px;
