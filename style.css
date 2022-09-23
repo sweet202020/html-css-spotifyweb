@@ -351,11 +351,20 @@ body{
 .play .time div:not(.bars){
     padding: 0 10px;
 }
-.play .bars{
+.play .bars, .play .bars .bars_op{
     margin-top: 10px;
     height: 3px;
     background-color: var(--Spot-text);
+}
+.play .bars{
     width: 100%;
+    position: relative;
+}
+.play .bars .bars_op{
+    background-color: white;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
 }
 .volume{
     width: calc((100% / 12)*4);
